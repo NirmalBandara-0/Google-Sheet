@@ -1,11 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Sheet Form</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4F46E5,#06B6D4);
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+
+.left{
+    width:50%;
+    background:linear-gradient(160deg,#4F46E5,#2563EB);
+    color:white;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.left h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.left p{
+    line-height:30px;
+    font-size:18px;
+    opacity:.9;
+}
+
+.right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+}
+
+.card{
+    width:100%;
+}
+
+.card h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#333;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box input{
+    width:100%;
+    padding:16px;
+    border:none;
+    background:#F3F4F6;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+}
+
+.input-box input:focus{
+    background:#E0F2FE;
+    border:2px solid #2563EB;
+}
+
+button{
+    width:100%;
+    padding:16px;
+    border:none;
+    background:#2563EB;
+    color:white;
+    font-size:18px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1D4ED8;
+    transform:scale(1.02);
+}
+
+.footer{
+    margin-top:25px;
+    text-align:center;
+    color:#666;
+}
+
+.footer a{
+    text-decoration:none;
+    color:#2563EB;
+    font-weight:600;
+}
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.left{
+    padding:40px;
+    text-align:center;
+}
+
+.left h1{
+    font-size:35px;
+}
+
+}
+</style>
+
 </head>
 <body>
-    
+
+<div class="container">
+
+<div class="left">
+<h1>Google Sheet Form</h1>
+
+<p>
+Store your records safely inside Google Sheets.
+Fast, Easy and Secure Data Collection System.
+</p>
+
+</div>
+
+<div class="right">
+
+<div class="card">
+
+<h2>Welcome</h2>
+
+<div class="input-box">
+<input type="text" placeholder="Enter Your Name">
+</div>
+
+<div class="input-box">
+<input type="email" placeholder="Enter Your Email">
+</div>
+
+<div class="input-box">
+<input type="password" placeholder="Enter Password">
+</div>
+
+<button>Continue</button>
+
+<div class="footer">
+<p>Powered by Google Sheets</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </body>
 </html>
